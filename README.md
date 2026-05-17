@@ -26,3 +26,11 @@ This project is built using [Flutter](https://flutter.dev/). To run the app loca
 1. Clone this repository
 2. Run `flutter pub get`
 3. Run `flutter run`
+
+## Support the Project
+
+If you like this project and want to support its development, you can scan the QR code below:
+
+<div align="left">
+  <img src="screenshots/support.png" width="250" />
+</div>
