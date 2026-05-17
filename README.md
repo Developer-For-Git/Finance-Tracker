@@ -1,8 +1,34 @@
-# Finance Tracker
+<h1 align="center">
+  <br>
+  Finance Tracker
+  <br>
+</h1>
 
-A comprehensive personal finance tracking app built with Flutter, designed to manage budgets, multiple wallets, and recurring transactions with a premium dark-mode aesthetic.
+<h4 align="center">A comprehensive, offline-first personal finance tracking app built with Flutter.</h4>
 
-## Screenshots
+<p align="center">
+  <a href="https://flutter.dev">
+    <img src="https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white" alt="Flutter">
+  </a>
+  <a href="https://dart.dev">
+    <img src="https://img.shields.io/badge/Dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white" alt="Dart">
+  </a>
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge" alt="License">
+  </a>
+</p>
+
+<p align="center">
+  <a href="#-key-features">Key Features</a> •
+  <a href="#-screenshots">Screenshots</a> •
+  <a href="#-how-to-use">How To Use</a> •
+  <a href="#-tech-stack">Tech Stack</a> •
+  <a href="#-support-the-project">Support</a>
+</p>
+
+---
+
+## 📱 Screenshots
 
 <div align="center">
   <img src="screenshots/Screenshot_20260517_115435.jpg" width="220" />
@@ -11,26 +37,48 @@ A comprehensive personal finance tracking app built with Flutter, designed to ma
   <img src="screenshots/Screenshot_20260517_115501.jpg" width="220" />
 </div>
 
-## Features
+## ✨ Key Features
 
-- **Multi-Wallet Balance Tracking:** Keep track of personal and business balances separately.
-- **Budget Management:** Set monthly budget limits and visualize category spending.
-- **Data Import/Export:** Easily backup and restore your financial data.
-- **Recurring Transactions:** Manage bills, subscriptions, and regular incomes efficiently.
-- **Detailed Analytics:** Track income/expense trends and monitor your savings over time.
+*   **💼 Multi-Wallet Balance Tracking:** Keep track of personal, business, and savings balances separately without mixing them up.
+*   **📊 Budget Management:** Set monthly budget limits for different categories and visualize spending easily.
+*   **🔄 Recurring Transactions:** Automate bills, subscriptions, and regular incomes to save time.
+*   **📈 Detailed Analytics:** Dive deep into income/expense trends with intuitive charts and monitor your net savings over time.
+*   **🔒 Privacy First & Offline:** Your financial data is securely stored locally on your device.
+*   **💾 Data Import/Export:** Easily backup and restore your financial data across devices.
+*   **🎨 Premium UI/UX:** A stunning dark-mode aesthetic built with glassmorphism and smooth animations.
 
-## Getting Started
+## 🚀 How To Use
 
-This project is built using [Flutter](https://flutter.dev/). To run the app locally:
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Flutter](https://flutter.dev/docs/get-started/install) installed on your computer. From your command line:
 
-1. Clone this repository
-2. Run `flutter pub get`
-3. Run `flutter run`
+```bash
+# Clone this repository
+$ git clone https://github.com/Developer-For-Git/Finance-Tracker.git
 
-## Support the Project
+# Go into the repository
+$ cd Finance-Tracker
 
-If you like this project and want to support its development, you can scan the QR code below:
+# Install dependencies
+$ flutter pub get
+
+# Run the app
+$ flutter run
+```
+
+## 🛠️ Tech Stack
+
+- **Framework:** [Flutter](https://flutter.dev/)
+- **Language:** [Dart](https://dart.dev/)
+- **Architecture:** MVVM/Clean Architecture
+- **Local Storage:** SQLite (Offline-first approach)
+
+## 💖 Support the Project
+
+If you find this project useful and want to support its continued development, consider donating! Scan the QR code below:
 
 <div align="left">
   <img src="screenshots/support.png" width="250" />
 </div>
+
+---
+<p align="center">Made with ❤️ for the community</p>
