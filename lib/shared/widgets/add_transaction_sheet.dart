@@ -12,6 +12,7 @@ import '../../features/history/audit_log_screen.dart';
 import '../../data/models/transaction_model.dart';
 import '../../data/models/split_model.dart';
 import 'split_transaction_sheet.dart';
+import '../../core/utils/icon_helper.dart';
 class AddTransactionSheet extends ConsumerStatefulWidget {
   final String? initialType;
   final TransactionModel? transactionToEdit;
@@ -404,8 +405,7 @@ class _AddTransactionSheetState extends ConsumerState<AddTransactionSheet>
                               mainAxisSize: MainAxisSize.min,
                               children: [
                                 Icon(
-                                  IconData(int.tryParse(cat.icon) ?? 0xe8b8,
-                                      fontFamily: 'MaterialIcons'),
+                                  IconHelper.getIcon(cat.icon),
                                   size: 16,
                                   color: isSelected ? catColor : AppColors.textSecondary,
                                 ),

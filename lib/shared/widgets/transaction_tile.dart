@@ -3,6 +3,7 @@ import '../../core/theme/app_theme.dart';
 import '../../data/models/transaction_model.dart';
 import '../../data/models/category_model.dart';
 import '../../core/utils/formatters.dart';
+import '../../core/utils/icon_helper.dart';
 
 class TransactionTile extends StatelessWidget {
   final TransactionModel transaction;
@@ -66,7 +67,7 @@ class TransactionTile extends StatelessWidget {
                 ),
                 child: Center(
                   child: Icon(
-                    _iconData(category?.icon ?? '0xe8b8'),
+                    IconHelper.getIcon(category?.icon ?? '0xe8b8'),
                     color: catColor,
                     size: 20,
                   ),
@@ -193,13 +194,5 @@ class TransactionTile extends StatelessWidget {
         ),
       ),
     );
-  }
-
-  IconData _iconData(String codePoint) {
-    try {
-      return IconData(int.parse(codePoint), fontFamily: 'MaterialIcons');
-    } catch (_) {
-      return Icons.category_rounded;
-    }
   }
 }

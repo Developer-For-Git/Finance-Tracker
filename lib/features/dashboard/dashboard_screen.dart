@@ -244,10 +244,6 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen>
                     _buildWorkspaceSwitcher(context),
                     const SizedBox(height: 20),
 
-                    // Developer Card
-                    _buildDeveloperCard(context),
-                    const SizedBox(height: 20),
-
                     // Balance Card (Glassmorphism)
                     _buildBalanceCard(context, totalBalance, monthlyIncome, monthlyExpense, symbol),
                     const SizedBox(height: 20),

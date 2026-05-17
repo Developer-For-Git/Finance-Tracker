@@ -4,6 +4,7 @@ import 'package:uuid/uuid.dart';
 import '../../core/theme/app_theme.dart';
 import '../../data/models/split_model.dart';
 import '../../data/providers/finance_providers.dart';
+import '../../core/utils/icon_helper.dart';
 
 class SplitTransactionSheet extends ConsumerStatefulWidget {
   final double? totalAmount;
@@ -179,7 +180,7 @@ class _SplitTransactionSheetState extends ConsumerState<SplitTransactionSheet> {
                                     value: cat.id,
                                     child: Row(
                                       children: [
-                                        Icon(IconData(int.tryParse(cat.icon) ?? 0xe8b8, fontFamily: 'MaterialIcons'), color: catColor, size: 20),
+                                        Icon(IconHelper.getIcon(cat.icon), color: catColor, size: 20),
                                         const SizedBox(width: 8),
                                         Text(cat.name, style: const TextStyle(color: AppColors.textPrimary)),
                                       ],

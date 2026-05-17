@@ -5,6 +5,7 @@ import 'package:uuid/uuid.dart';
 import '../../core/theme/app_theme.dart';
 import '../../data/providers/finance_providers.dart';
 import '../../data/models/category_model.dart';
+import '../../core/utils/icon_helper.dart';
 
 class CategoriesScreen extends ConsumerStatefulWidget {
   const CategoriesScreen({super.key});
@@ -165,8 +166,7 @@ class _CategoriesScreenState extends ConsumerState<CategoriesScreen>
                     borderRadius: BorderRadius.circular(16),
                   ),
                   child: Icon(
-                    IconData(int.tryParse(cat.icon) ?? 0xe8b8,
-                        fontFamily: 'MaterialIcons'),
+                    IconHelper.getIcon(cat.icon),
                     color: color,
                     size: 26,
                   ),
@@ -439,8 +439,7 @@ class _CategoryFormSheetState extends ConsumerState<_CategoryFormSheet> {
                               isSelected ? color : AppColors.border),
                     ),
                     child: Icon(
-                      IconData(int.tryParse(iconCode) ?? 0xe8b8,
-                          fontFamily: 'MaterialIcons'),
+                      IconHelper.getIcon(iconCode),
                       color: isSelected ? color : AppColors.textMuted,
                       size: 22,
                     ),
